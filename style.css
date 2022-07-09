@@ -55,7 +55,11 @@ body {
   background-color: rgb(243, 243, 243);
 }
 
-.login-form label {
+.login-form .input:focus-within {
+  border-color: gray;
+}
+
+.login-form .input label {
   border: 0;
   font-size: 12px;
   color: gray;
@@ -71,11 +75,6 @@ body {
   outline: none;
 }
 
-
-.login-form input[type="password"]::after {
-  content: "Mostrar"
-}
-
 .login-form button {
   margin: 10px 0;
   padding: 5px;
@@ -85,7 +84,8 @@ body {
   border: 0;
   border-radius: 3px;
   background-color: rgb(0, 149, 246);
-  color: #fff
+  color: #fff;
+  cursor: pointer
 }
 
 .or {
